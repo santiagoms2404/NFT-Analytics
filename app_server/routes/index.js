@@ -3,10 +3,17 @@ var router = express.Router();
 
 // Require controllers file
 var ctrlHome = require('../controllers/home');
+var ctrlProfile = require('../controllers/profile');
+var ctrlCollection = require('../controllers/collection');
+var ctrlAbout = require('../controllers/about');
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'NFT Mountain' });
-});
+/* GET homepage. */
+router.get('/', ctrlHome.index);
+/* GET profile page. */
+router.get('/', ctrlCollection.index);
+/* GET collection page. */
+router.get('/', ctrlAbout.index);
+/* GET about page. */
+router.get('/', ctrlProfile.index);
 
 module.exports = router;
