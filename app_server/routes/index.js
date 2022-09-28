@@ -10,10 +10,9 @@ var ctrlAbout = require('../controllers/about');
 /* GET homepage. */
 router.get('/', ctrlHome.index);
 /* GET profile page. */
-router.get('/', ctrlCollection.index);
+router.get('/profile', ctrlProfile.index);
 /* GET collection page. */
-router.get('/', ctrlAbout.index);
+router.get('/collection', ctrlCollection.index);
 /* GET about page. */
-router.get('/', ctrlProfile.index);
-
+router.get('/about', ctrlAbout.index);
 module.exports = router;
