@@ -1,5 +1,143 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  doctype html
+  html(lang='en')
+  link(rel='stylesheet', href='../styles/word.css', type='text/css')
+  head
+        nav.navbar.background
+          ul.nav-list
+            .logo
+              img(src='images/mountain.png')
+            li
+              a.active(href='/') COLLECTIONS
+            li
+              a.active(href='/profile') PROFILE
+            li
+              a.active(href='/About') ABOUT US
+          .centerNav
+            input#search(type='text', name='search')
+            button.btn.btn-sm SEARCH
+    
+  body
+    h1 NFT Mountain
+    h2 Trending collections
+
+    table#collections
+      tbody
+        tr
+          th COLLECTION NAME
+          th FLOOR PRICE
+          th 1D CHANGE
+          th 7D CHANGE
+          th "x" MIN/HRS VOLUME
+          th 1D VOLUME
+          th 7D VOLUME
+          th OWNERS
+          th SUPPLY 
+          th MKT CAP
+        tr
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+        tr
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+        tr
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+        tr
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+        tr
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+        tr
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+        tr
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+        tr
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+        tr
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+          td test
+
+  footer 
+    .footer
+      p.text 
+        | ETH price:
+

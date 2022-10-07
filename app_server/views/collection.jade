@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  doctype html
+  html(lang='en')
+  link(rel='stylesheet', href='../styles/word.css', type='text/css')
+  head
+        nav.navbar.background
+          ul.nav-list
+            .logo
+              img(src='images/mountain.png')
+            li
+              a.active(href='/') COLLECTIONS
+            li
+              a.active(href='/profile') PROFILE
+            li
+              a.active(href='/About') ABOUT US
+          .centerNav
+            input#search(type='text', name='search')
+            button.btn.btn-sm SEARCH
+  body 
+    h1 Collection 
