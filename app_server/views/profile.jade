@@ -1,5 +1,4 @@
 extends layout
-
 block content
   doctype html
   html(lang='en')
@@ -18,8 +17,25 @@ block content
           .centerNav
             input#search(type='text', name='search')
             button.btn.btn-sm SEARCH
-  body 
-    h1 Your Profile 
+  body  
+    table#stats 
+          tbody 
+            tr 
+              th WALLET:
+              th TOTAL COLLECTIONS:
+              th LISTED: 
+              th ESTIMATED VALUE:
+              th COST:
+              th REALIZED PROFIT: 
+              th UNREALIZED PROFIT:
+            tr 
+              td 0x3964B8d796c6a8d10d45afCFB7dF76D3c11825a3
+              td 17
+              td 0/17
+              td 2.5007
+              td .3929
+              td 2.1078
+              td 0.187
     .split
       .side
         h2 PORTFOLIO VALUE
@@ -31,9 +47,7 @@ block content
                 th FLOOR
                 th VALUE
                 th LISTED
-                th COST
               tr
-                td test
                 td test
                 td test
                 td test
@@ -44,22 +58,18 @@ block content
                 td test
                 td test
                 td test
-                td test
 
               tr
                 td test
                 td test
                 td test
                 td test
-                td test
               tr
                 td test
                 td test
                 td test
                 td test
-                td test
               tr
-                td test
                 td test
                 td test
                 td test
