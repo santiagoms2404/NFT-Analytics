@@ -1,3 +1,5 @@
+/*
+
 const mongoose = require('mongoose');
 
 const dbURI = 'mongodb://localhost/NFT-ANALITICS';
@@ -18,3 +20,4 @@ mongoose.connection.on('disconnected', () => {
     console.log('Mongoose disconnected');
 });
   
+*/
