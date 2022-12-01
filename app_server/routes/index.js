@@ -15,4 +15,5 @@ router.get('/profile', ctrlProfile.index);
 router.get('/collection', ctrlCollection.index);
 /* GET about page. */
 router.get('/about', ctrlAbout.index);
+
 module.exports = router;
