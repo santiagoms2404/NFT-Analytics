@@ -18,5 +18,296 @@ block content
           .centerNav
             input#search(type='text', name='search')
             button.btn.btn-sm SEARCH
-  body 
-    h1 Collection 
+  body  
+    table#stats 
+          tbody 
+            tr 
+              th COLLECTION NAME:
+              th FLOOR PRICE:
+              th 1D FLOOR: 
+              th 7D FLOOR:
+              th 1D CHANGE:
+              th 7D CHANGE: 
+              th 15M VOLUME:
+              th ID VOLUME: 
+              th 7D VOLUME: 
+              th OWNERS: 
+              th SUPPLY: 
+              th ROYALTY:
+            tr 
+              td 
+              td 
+              td 
+              td 
+              td 
+              td 
+              td 
+              td 
+              td 
+              td 
+              td 
+              td
+    .splitScreenCollection.leftScreen
+      h2 TRAITS
+        button.collapsible(type='button') TRAIT CATEGORY
+        .content
+          p.activeContent trait 1
+          p.activeContent trait 2
+          p.activeContent trait 3
+          p.activeContent trait 4
+          p.activeContent trait 5
+          p.activeContent trait 6
+        button.collapsible(type='button') TRAIT CATEGORY
+        .content
+          p.activeContent trait 1
+          p.activeContent trait 2
+          p.activeContent trait 3
+          p.activeContent trait 4
+          p.activeContent trait 5
+          p.activeContent trait 6
+        button.collapsible(type='button') TRAIT CATEGORY
+        .content
+          p.activeContent trait 1
+          p.activeContent trait 2
+          p.activeContent trait 3
+          p.activeContent trait 4
+          p.activeContent trait 5
+          p.activeContent trait 6
+        button.collapsible(type='button') TRAIT CATEGORY
+        .content
+          p.activeContent trait 1
+          p.activeContent trait 2
+          p.activeContent trait 3
+          p.activeContent trait 4
+          p.activeContent trait 5
+          p.activeContent trait 6
+        script.
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+          for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+          content.style.display = "none";
+          } else {
+          content.style.display = "block";
+          }
+          });
+          }
+
+      .slidecontainer
+        p SELECT ITEMS
+        input#myRange.slider(type='range', min='0', max='30', value='0')
+        p Value: 
+          span#demo
+        script.
+          var slider = document.getElementById("myRange");
+          var output = document.getElementById("demo");
+          output.innerHTML = slider.value;
+          slider.oninput = function() {
+          output.innerHTML = this.value;
+          }
+
+    .splitScreenCollection.centerScreen
+      h2 COLLECTION ITEMS
+        table#collections 
+            tbody 
+              tr 
+                th ITEMS:
+                th RARITY:
+                th BUY NOW: 
+                th LAST SALE:
+                th TOP BID:
+                th OWNER: 
+                th #HOLD:
+                th TIME: 
+              tr 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td
+              tr 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td
+              tr 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td
+              tr 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td
+              tr 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td
+              tr 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td
+              tr 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td
+              tr 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td
+              tr 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td
+              tr 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td
+              tr 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td
+              tr 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td
+              tr 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td
+              tr 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td 
+                td
+        h2 SALES/LISTINGS    
+    .splitScreenCollection.rightScreen
+      h2 ACTIVITY
+        table#collections 
+            tbody 
+              tr 
+                th TIME
+                th ITEM:
+                th STATUS:
+                th PRICE: 
+                th BUYER: 
+              tr 
+                td 
+                td 
+                td 
+                td
+                td
+              tr 
+                td 
+                td 
+                td 
+                td
+                td
+              tr 
+                td 
+                td 
+                td 
+                td
+                td 
+              tr 
+                td 
+                td 
+                td 
+                td
+                td
+              tr 
+                td 
+                td 
+                td 
+                td
+                td
+              tr 
+                td 
+                td 
+                td 
+                td
+                td
+               tr 
+                td 
+                td 
+                td 
+                td
+                td
+              tr 
+                td 
+                td 
+                td 
+                td
+                td
+        .splitscreenCollection.rightScreenBottom 
+          h2 FLOOR STRENGTH   
+
+
