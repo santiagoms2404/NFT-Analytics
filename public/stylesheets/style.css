@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
 }
 
+/* style of the body */
 body {
   font-family: 'Courier New', monospace;
   margin: 0;
@@ -10,31 +11,35 @@ body {
   font-size: 20px;
 }
 
+/* headder 1 style */
 h1 {
   font-size: 50px;
   color: rgb(28, 46, 48);
   text-align: left;
 }
 
-
+/* headder 2 style */
 h2 {
+  margin: 0;
   font-size: 30px;
   color: rgb(28, 46, 48);
   text-align: left;
 }
 
+/* headder 3 style */
 h3 {
   font-size: 50px;
   color: rgb(28, 46, 48);
   text-align: center;
-
 }
 
+/* headder 4 style */
 h4 {
   color: rgb(28, 46, 48);
   text-align: left;
 }
 
+/* logo style */
 .logo {
   width: 20%;
   display: flex;
@@ -42,56 +47,66 @@ h4 {
   align-items: center;
 }
 
+/* image logo style */
 .logo img {
   width: 33%;
   border: 2px solid rgb(117, 213, 226);
   border-radius: 50px;
 }
 
+/* bar menu style */
 .navbar {
-  overflow: hidden;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: left;
   position: sticky;
-  top: 0;
+  border: 2px solid rgb(117, 213, 226);
 }
 
+/* list of the menus */
 .nav-list {
-  width: 70%;
+  width: 80%;
   display: flex; 
   align-items: center;
   justify-content: left;
-  padding: 6px 8px;
-  text-decoration: none;
 }
 
+/* style of the menu */
 .nav-list li {
   list-style: none;
   padding: 2px 6px;
 }
 
+/* style and path of the menu */
 .nav-list li a {
   color: rgb(28, 46, 48);
-  padding: 10px 5px;
+  padding: 10px 7px;
   text-decoration: none;
 }
 
+/* change color of the menu when hover with mouse */
 .nav-list li a:hover {
+  border: 2px solid rgb(117, 213, 226);
   background-color: rgb(15, 38, 39);
   color: rgb(117, 213, 226);
 }
 
+/* change menu color when active */
 .navbar a.active {
   color: rgb(117, 213, 226);
+  padding: 10px 7px;
+
 }
 
+/* style of text in menu */
 .centerNav {
   width: 50;
   text-align: center;
   align-items: center;
 }
 
+/* search bar style */
 #search {
   font-size: 17px;
   border: 4px solid rgb(117, 213, 226);
@@ -99,34 +114,60 @@ h4 {
   
 }
 
+/* backgroud style of search bar */
 .background {
   background: rgb(23, 63, 70);
   background-blend-mode: darken;
   background-size: cover;
-  border-width: 2px;
-  border-color: rgb(117, 213, 226);
 }
 
+/* table style */
+#stats {
+  border-collapse: collapse;
+  width: 100%;
+}
+#stats td, #stats th {
+  border-style:hidden;
+  border-width: 2px;
+  padding: 8px;
+  font-size: 15px;
+  color: rgb(117, 213, 226);
+}
+
+/* background of the table style */
+#stats tr:nth-child(even){background-color: rgb(23, 63, 70);}
+
+
+/* colums of the table style */
+#stats th {
+  text-align: left;
+  background: rgb(23, 63, 70);
+  color: rgb(117, 213, 226);
+}
+
+/* split the screen in two sections */
 .split {  
-  display: -ms-flexbox; 
   display: flex;
   -ms-flex-wrap: wrap; 
   flex-wrap: wrap;
   color: rgb(28, 46, 48);
 }
 
+/* style of the image logo */
 .img-logo {
   margin-top: 40px;
   height: 400px;
   width: 100%;
 }
 
+/* left side of the screen in about page */
 .side-about {
   -ms-flex: 75%; 
   flex: 25%;
   padding: 20px;
 }
 
+/* right side of the screen in about page */
 .main-about {   
   -ms-flex: 25%; 
   flex: 75%;
@@ -134,41 +175,48 @@ h4 {
   padding: 20px;
 }
 
+/* style of the left side of the screen profile page */
 .side {
-  -ms-flex: 50%; 
-  flex: 50%;
+  -ms-flex: 70%; 
+  flex: 30%;
   padding: 20px;
 }
 
+/* style of the right side of the screen profile page */
 .main {   
-  -ms-flex: 50%; 
-  flex: 50%;
+  -ms-flex: 30%; 
+  flex: 70%;
   background-color: #7ce5f5;
   padding: 20px;
 }
 
+/* create a column */
 .column {
   margin-bottom: 8px;
   padding: 0 8px;
   text-align: center;
 }
 
+/* create a card inside the column */
 .card {
   width: 100%;
   height: 100%;
   align-items: center;
 }
 
+/* text style */
 .text {
   color: rgb(28, 46, 48);
   font-size: 20px;
 }
 
+/* footer text style */
 .footer-text {
   color: rgb(117, 213, 226);
   font-size: 15px;
 }
 
+/* image of the team style */
 .team {
   margin-top: 10px;
   align-items: center;
@@ -176,6 +224,7 @@ h4 {
   height: 50%;
 }
 
+/* button style */
 .button {
   border: none;
   outline: 0;
@@ -188,11 +237,85 @@ h4 {
   width: 100%;
 }
 
+/* change color of the button when hover */
 .button:hover {
   background-color: rgb(117, 213, 226);
   color: #04333a;
 }
 
+/* Split the screen into thirds*/
+.splitScreenCollection {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 40;
+  overflow-x: hidden;
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgb(117, 213, 226);
+}
+
+/* Control the left side */
+.leftScreen {
+  left: 0;
+  width: 20%;
+  background-color: #7ce5f5;
+}
+
+/* Control the right side */
+.rightScreen {
+  right: 0;
+  width: 25%;
+  background-color: #7ce5f5;
+}
+
+.rightScreenBottom {
+  right: 0;
+  width: 100%;
+  height: 40%;
+}
+
+.centerScreen {
+  right:25%;
+  left:20%;
+  background-color:#a1e5f0;
+}
+
+/* makes a collapsible list */
+.collapsible {
+  background-color: #a1e5f0;
+  color: rgb(28, 46, 48);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.activeCollapsable, .collapsible:hover {
+  background-color: rgb(32, 91, 102);
+  color: #a1e5f0;
+}
+.content {
+  background-color: #6cdaee;
+  font-size: 15px;
+}
+
+.activeContent:hover {
+  background-color: rgb(32, 91, 102);
+  color: #a1e5f0;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+/* footer style */
 .footer {
   padding: .5px;
   text-align: left;
@@ -204,6 +327,7 @@ h4 {
   color: rgb(117, 213, 226);
 }
 
+/* table style */
 #collections {
   border-collapse: collapse;
   width: 100%;
@@ -217,10 +341,13 @@ h4 {
   font-size: 15px;
 }
 
+/* background of the table style */
 #collections tr:nth-child(even){background-color: #7ce5f5;}
 
+/* change color of the table style when hovering with the mouse */
 #collections tr:hover {background-color: rgb(32, 91, 102); color: #7ce5f5;}
 
+/* colums of the table style */
 #collections th {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -229,6 +356,7 @@ h4 {
   color: rgb(117, 213, 226);
 }
 
+/* adjust screen */
 @media screen and (max-width: 700px) {
   .row {   
     flex-direction: column;
