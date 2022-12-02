@@ -20,6 +20,7 @@ block content
             input#search(type='text', name='search')
             button.btn.btn-sm SEARCH
   body  
+  
     table#stats 
           tbody 
             tr 
@@ -250,17 +251,17 @@ block content
                 td 
                 td
         h2 SALES/LISTINGS
-        canvas#saleListingChart
+          canvas#salesChart
         script(src='https://cdn.jsdelivr.net/npm/chart.js')
         script.
-          const ctx = document.getElementById('saleListingChart');
+          const ctx = document.getElementById('salesChart');
           new Chart(ctx, {
-          type: 'bar',
+          type: 'line',
           data: {
-          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          labels: [],
           datasets: [{
-          label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
+          label: '# of items',
+          data: [],
           borderWidth: 1
           }]
           },
@@ -271,7 +272,8 @@ block content
           }
           }
           }
-          });    
+          });
+         
     .splitScreenCollection.rightScreen
       h2 ACTIVITY
         table#collections 
@@ -332,5 +334,32 @@ block content
                 td
         .splitscreenCollection.rightScreenBottom 
           h2 FLOOR STRENGTH   
+          canvas#floorChart
+        script.
+          const ctx_2 = document.getElementById('floorChart');
+          new Chart(ctx_2, {
+          type: 'bar',
+          data: {
+          labels: [],
+          datasets: [{
+          label: '# of items',
+          data: [],
+          borderWidth: 1
+          }]
+          },
+          options: {
+          scales: {
+          y: {
+          beginAtZero: true
+          }
+          }
+          }
+          });
+
+    footer 
+      .footer
+        p.footer-text 
+          | ETH price:
+
 
 

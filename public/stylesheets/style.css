@@ -317,8 +317,11 @@ h4 {
 
 /* footer style */
 .footer {
+  position: absolute;
   padding: .5px;
   text-align: left;
+  bottom:0px;
+  width:100%;
   font-size: 5px;
   background: rgb(23, 63, 70);
   border-style: solid;
